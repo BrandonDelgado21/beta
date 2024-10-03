@@ -19,15 +19,15 @@ user=$username
 password=$password
 ";
 
-$sconn = pg_connect($data_connection);
+$conn = pg_connect($data_connection);
 
-if(!$sconn){
+if(!$conn){
     die("Connection failed: ". pg_last_error());
 
 }else{
-    echo "Connected successfully";
+    //echo "Connected successfully";
 }
 
-pg_close($sconn);
+//pg_close($conn);
 
 ?>
